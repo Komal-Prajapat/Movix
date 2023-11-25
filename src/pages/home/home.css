@@ -3,6 +3,18 @@
     font-size: medium;
     
 }
+.navbar-light .navbar-brand {
+    font-size: x-large;
+    font-family: 'Helvetica', sans-serif;
+    margin-right: 150px;
+}
+a{
+    margin-left: 10px;
+}
+.poster{
+    position: relative;
+    top: -20px;
+}
 .posterImage_overlay{
     position: relative;
     top: -200px;
@@ -23,4 +35,12 @@
     background: red;
     color: red;
 }
-/* ffff */
+.carousel .control-dots{
+    position: relative;
+    top: 550px;
+}
+ .movielist{
+    position: relative;
+    top: -200px;
+    
+} 

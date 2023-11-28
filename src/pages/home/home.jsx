@@ -37,15 +37,15 @@ const Home = () => {
                 />
               </div>
               <div className="posterImage_overlay">
-                <div className="posterImage_title">{movie ? movie.original_title : ''}</div>
-                <div className="posterImage_runtime">
+                <div className="posterImage_title  poster_items">{movie ? movie.original_title : ''}</div>
+                <div className="posterImage_runtime poster_items">
                   {movie ? movie.release_date : ' '}
-                  <span className="posterImage__rating">
+                  <span className="posterImage__rating poster_items">
                     {movie ? movie.vote_average : ''}
                     <i className="fas fa-star"></i>
                   </span>
                 </div>
-                <div className="posterImage__description">{movie ? movie.overview : ''}</div>
+                <div className="posterImage__description poster_items">{movie ? movie.overview : ''}</div>
               </div>
             </Link>
           ))}

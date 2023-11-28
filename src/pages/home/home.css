@@ -15,7 +15,12 @@ a{
     position: relative;
     top: -20px;
 }
+.poster_items{
+    color: black;
+    background: white;
+}
 .posterImage_overlay{
+    color: blue;
     position: relative;
     top: -200px;
     text-align: left;

@@ -7,6 +7,7 @@ import Home from './pages/home/Home';
 import './App.css'
 import MovieList from './components/movieList/MovieList';
 import Card from './components/card/Card';
+import MovieDetails from './MovieDetails';
 function App() {
 
 
@@ -14,14 +15,15 @@ function App() {
     <div className='App'>
       <Router>
         <Header></Header>
-   
+     <MovieDetails></MovieDetails>
         <Routes>
 <Route index element=<Home></Home>></Route>
 <Route path='movie/:id' element={<h1>movie</h1>}></Route>
 <Route path='movies/:type' element=<MovieList></MovieList>> Movies </Route>
 <Route path='/' element={<h1> Error Page </h1>}></Route>
-
+{/* <MovieDetails></MovieDetails>  */}
         </Routes>
+        <MovieDetails></MovieDetails>
       </Router>
     </div>
   )

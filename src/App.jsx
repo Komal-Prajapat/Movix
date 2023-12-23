@@ -1,32 +1,30 @@
-import { useState } from 'react'
-import { BrowserRouter as Router , Routes , Route} from "react-router-dom"
-// import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import './App.css';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
-// import Card from './'
-import './App.css'
 import MovieList from './components/movieList/MovieList';
 import Card from './components/card/Card';
-import MovieDetails from './MovieDetails';
+import MovieDetails from './pages/movieDetails/MovieDetails';
+
 function App() {
-
-
   return (
     <div className='App'>
       <Router>
-        <Header></Header>
-     <MovieDetails></MovieDetails>
+        <Header />
+
         <Routes>
-<Route index element=<Home></Home>></Route>
-<Route path='movie/:id' element={<h1>movie</h1>}></Route>
-<Route path='movies/:type' element=<MovieList></MovieList>> Movies </Route>
-<Route path='/' element={<h1> Error Page </h1>}></Route>
-{/* <MovieDetails></MovieDetails>  */}
+          <Route path="/" element={<Home />} />
+          <Route path="movie/:id" element={<h1>movie</h1>} />
+          <Route path="movies/:type" element={<MovieList />} />
+          <Route path="/" element={<h1>Error Page</h1>} />
         </Routes>
+
+        {/* <MovieDetails></MovieDetails> */}
         <MovieDetails></MovieDetails>
       </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

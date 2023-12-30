@@ -19,9 +19,7 @@ function App() {
           <Route path="movies/:type" element={<MovieList />} />
           <Route path="/" element={<h1>Error Page</h1>} />
         </Routes>
-
-        {/* <MovieDetails></MovieDetails> */}
-        <MovieDetails></MovieDetails>
+       
       </Router>
     </div>
   );

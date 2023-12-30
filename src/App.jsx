@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import MovieList from './components/movieList/MovieList';
-// import MovieDetails from './pages/movieDetails/MovieDetails';
+import Card from './components/card/Card';
+import MovieDetails from './pages/movieDetails/MovieDetails';
 
 function App() {
   return (
@@ -13,9 +15,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="movie/:id" element={<h1>Movie</h1>} />
+          <Route path="movie/:id" element={<h1>movie</h1>} />
           <Route path="movies/:type" element={<MovieList />} />
-          <Route path="*" element={<h1>Error Page</h1>} />
+          <Route path="/" element={<h1>Error Page</h1>} />
         </Routes>
       </Router>
     </div>

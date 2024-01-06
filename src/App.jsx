@@ -15,9 +15,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="movie/:id" element={<h1>movie</h1>} />
           <Route path="movies/:type" element={<MovieList />} />
-          <Route path="/" element={<h1>Error Page</h1>} />
+          <Route path="movie/:id" element={<MovieDetails />} />
+          <Route path="*" element={<h1>Error Page</h1>} />
         </Routes>
       </Router>
     </div>

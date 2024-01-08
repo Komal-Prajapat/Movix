@@ -5,14 +5,14 @@ const Header = () => {
   return (
     
  <>
-<nav style={{position:'fixed',zIndex:1}} className="navbar navbar-expand-lg navbar-light bg-dark">
-  <div className="container-fluid">
+<nav style={{position:'fixed',zIndex:1}} className="navbar  navbar-expand-lg navbar-light bg-dark">
+  <div className="container-fluid  w-100">
     <a className="navbar-brand logo" href="#">BlockbusterBlend</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav me-auto mb-2 ">
         <li className="nav-item">
           {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
         </li>
@@ -26,7 +26,7 @@ const Header = () => {
         <Link to="/movies/top_rated">Top Rated</Link>
         </li>
         <li className="nav-item">
-        <Link to="/movies/upcoming">Upcoming</Link>
+        <Link to="/movies/upcoming ">Upcoming</Link>
         </li>
       
       </ul>
